@@ -1,0 +1,26 @@
+@use './navbar';
+@use './card';
+
+@import './variables';
+
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+*{
+	transition: all 0.3s ease-in-out;
+}
+
+.d-grid{
+	@include media-breakpoint-up(xs){
+		grid-template-columns: auto;
+	}
+	@include media-breakpoint-up(sm){
+		grid-template-columns: auto auto;
+	}
+	@include media-breakpoint-up(md){
+		grid-template-columns: auto auto auto;
+	}
+	@include media-breakpoint-up(lg){
+		grid-template-columns: auto auto auto auto;
+	}
+}

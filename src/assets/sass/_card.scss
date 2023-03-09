@@ -1,0 +1,23 @@
+
+
+.card{
+	&-img-top{
+		object-fit: cover;
+		height: 14rem;
+	}
+	&-body{
+		position: relative;
+	}
+	&-price{
+		position: absolute;
+		right: 0;
+		bottom: 20px;
+	}
+	&-title{
+		font-size: 20px;
+	}
+	button{
+		position: absolute;
+		bottom: 0;
+	}
+}

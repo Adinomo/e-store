@@ -1,0 +1,19 @@
+@import './variables';
+
+.navbar{
+	&-brand{
+		font-weight: 700;
+		font-size: 60px;
+		font-family: $font-bold;
+	}
+	.nav-item{
+		border-bottom: 2px solid white;
+		&:hover{
+			border-bottom: 2px solid $primary;
+		}
+		.nav-link{
+			font-size: 18px;
+			font-weight: 400;
+		}
+	}
+}

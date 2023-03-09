@@ -1,0 +1,25 @@
+@font-face {
+	font-family: 'kumbh';
+	src: url(../font/KumbhSans-Regular.ttf);
+}
+
+@font-face {
+	font-family: "kumbh-bold";
+	src: url(../font/KumbhSans-ExtraBold.ttf);
+}
+
+//primary colors
+$primary: hsl(26, 100%, 55%);
+$pale_orange: hsl(25, 100%, 94%);
+
+//neutral colors
+$very_dark_blue: hsl(220, 13%, 13%);
+$dark_grayish_blue: hsl(219, 9%, 45%);
+$grayish_blue: hsl(220, 14%, 75%);
+$light_grayish_blue: hsl(223, 64%, 98%);
+$white: hsl(0, 0%, 100%);
+//$black (with 75% opacity for lightbox background): hsl(0, 0%, 0%);
+
+//font
+$font-family-base: 'kumbh';
+$font-bold: "kumbh-bold"
