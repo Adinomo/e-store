@@ -1,5 +1,5 @@
 import React from "react";
-//import image from '../assets/images/image-product-1.jpg';
+import LinesEllipsis from 'react-lines-ellipsis';
 
 function Card({ title, price, image }) {
 	return (
@@ -10,7 +10,7 @@ function Card({ title, price, image }) {
 				alt="Title"
 			/>
 			<div className="card-body">
-				<h4 className="card-title">{title}</h4>
+				<h4 className="card-title"><LinesEllipsis text={title} maxLine='2' ellipsis='...' /></h4>
 				<button className="btn-primary btn text-white">Add to cart</button>
 				<span className="card-price">${price}</span>
 			</div>

@@ -1,9 +1,12 @@
 
 
 .card{
+	&-body{
+		height: 110px;
+	}
 	&-img-top{
 		object-fit: cover;
-		height: 14rem;
+		height: 13rem;
 	}
 	&-body{
 		position: relative;
@@ -11,7 +14,7 @@
 	&-price{
 		position: absolute;
 		right: 0;
-		bottom: 20px;
+		bottom: 0px;
 	}
 	&-title{
 		font-size: 20px;
