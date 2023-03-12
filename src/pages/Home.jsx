@@ -23,6 +23,7 @@ function Home() {
 						title={item.title}
 						price={item.price}
 						image={item.image}
+						products={item}
 					/>
 				))}
 			</div>
