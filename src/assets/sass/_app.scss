@@ -1,5 +1,6 @@
 @use './navbar';
 @use './card';
+@use './cart';
 
 @import './variables';
 
@@ -23,4 +24,8 @@
 	@include media-breakpoint-up(lg){
 		grid-template-columns: auto auto auto auto;
 	}
+}
+
+.spinner{
+	margin-top: 200px;
 }

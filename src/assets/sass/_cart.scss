@@ -1,0 +1,18 @@
+
+.cart{
+	&-item{
+		&-img{
+			width: 100px;
+			height: 100px;
+		}
+	}
+	&-delete{
+		&:hover{
+			cursor: pointer;
+		}
+	}
+	&-info{
+		width: 500px;
+	}
+}
+//#9fa6b2 error color
