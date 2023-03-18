@@ -7,7 +7,7 @@ import { IconContext } from "react-icons";
 function CartItem({ title, img, price, cartQuantity }) {
 	return (
 		<div className="container-fluid mt-2">
-			<div className="cart-item pb-2 pt-2 border-bottom d-block d-md-flex align-items-center">
+			<div className="cart-item pb-2 pt-2 border-bottom d-block d-md-flex align-items-center justify-content-between">
 				<div className="d-flex align-items-center cart-info">
 					<img
 						src={img}
