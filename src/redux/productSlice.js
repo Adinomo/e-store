@@ -28,7 +28,7 @@ export const todoSlice = createSlice({
 		builder.addCase(callApi.rejected, (state, action) => {
 			state.loading = false
 			state.products = []
-			state.error = action.error.message
+			state.error_msg = action.error.message
 		})
 	}
 })

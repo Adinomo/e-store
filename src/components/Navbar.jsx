@@ -29,12 +29,13 @@ function Navbar() {
 						</li>
 					</ul>
 					<ul className="navbar-nav">
-						<li className="nav-item">
+						<li className="nav-item position-relative">
 							<NavLink
 								to="/cart"
 								className="nav-link px-3">
 								<HiShoppingBag size={28} />
 							</NavLink>
+							<p className="nav-cart position-absolute bg-primary d-flex align-items-center">0</p>
 						</li>
 					</ul>
 				</div>

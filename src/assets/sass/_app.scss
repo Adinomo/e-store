@@ -1,5 +1,6 @@
 @use './navbar';
 @use './card';
+@use './cart';
 
 @import './variables';
 
@@ -22,5 +23,28 @@
 	}
 	@include media-breakpoint-up(lg){
 		grid-template-columns: auto auto auto auto;
+	}
+}
+
+.spinner{
+	margin-top: 200px;
+}
+
+.cart{
+	&-item{
+		@include media-breakpoint-down(md){
+			flex-direction: column;
+	   }
+	}
+	&-info{
+		@include media-breakpoint-down(lg){
+			width: 400px;
+	   }
+		@include media-breakpoint-down(md){
+			width: 100%;
+			padding-left: 15px;
+			justify-content: center;
+			margin-left: -15px;
+	   }
 	}
 }
