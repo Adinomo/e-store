@@ -26,6 +26,7 @@ function Cart() {
 						img={item.image}
 						price={item.price}
 						cartQuantity={item.cartQuantity}
+						item={item}
 					/>
 				))
 			) : (
@@ -38,12 +39,6 @@ function Cart() {
 					</p>
 				</div>
 			)}
-			<CartItem
-				title="longsleeve stylish t-shirt for adults black label"
-				img={realimg}
-				price="28"
-				cartQuantity={2}
-			/>
 		</div>
 	);
 }

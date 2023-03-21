@@ -3,8 +3,16 @@ import image from "../assets/images/image-product-1.jpg";
 import deleteImg from "../assets/images/icon-delete.svg";
 import { MdDelete } from 'react-icons/md';
 import { IconContext } from "react-icons";
+import { removeFromCart } from "../redux/cartSlice";
+import { useDispatch } from "react-redux";
 
-function CartItem({ title, img, price, cartQuantity }) {
+function CartItem({ title, img, price, cartQuantity, item }) {
+	const dispatch = useDispatch();
+ 
+	const handleRemoveFromCart = (item) => {
+		dispatch(removeFromCart(item))
+	}
+
 	return (
 		<div className="container-fluid mt-2">
 			<div className="cart-item pb-2 pt-2 border-bottom d-block d-md-flex align-items-center justify-content-between">
@@ -30,7 +38,7 @@ function CartItem({ title, img, price, cartQuantity }) {
 				</div>
 				<IconContext.Provider
 					value={{ size: "1.3rem", color: "#949aa5", className: "mt-3 mt-md-0 pointer" }}>
-					<MdDelete />
+					<span onClick={() => handleRemoveFromCart(item)}><MdDelete /></span>
 				</IconContext.Provider>
 			</div>
 		</div>
