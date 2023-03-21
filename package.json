@@ -20,9 +20,13 @@
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.8.2",
     "react-spinners": "^0.13.8",
+<<<<<<< HEAD
     "react-toastify": "^5.4.0",
+=======
+>>>>>>> 4ff84b9ad1cf368dce156f7a95d25ad000228a06
     "redux": "^4.2.1",
-    "sass": "^1.58.3"
+    "sass": "^1.58.3",
+    "snackbar": "^1.1.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.22",
