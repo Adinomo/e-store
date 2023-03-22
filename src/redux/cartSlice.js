@@ -31,10 +31,32 @@ export const cartSlice = createSlice({
 				item => item.id !== action.payload.id
 			);
 			state.cartItems = nextCartItem;
-		}
+			toast.error("removed from cart", {
+				position: "bottom-left",
+			});
+		},
+		decreaseCartQuantity: (state, action) => {
+			const itemIndex = state.cartItems.findIndex(
+				(item) => item.id === action.payload.id,
+			);
+			if (state.cartItems[itemIndex].cartQuantity > 1) {
+				state.cartItems[itemIndex].cartQuantity -= 1;
+				toast.info("decreased cart quantity", {
+					position: "bottom-left",
+				});
+			} else if (state.cartItems[itemIndex].cartQuantity === 1) {
+				const nextCartItem = state.cartItems.filter(
+					(item) => item.id !== action.payload.id,
+				);
+				state.cartItems = nextCartItem;
+				toast.error("removed from cart", {
+					position: "bottom-left",
+				});
+			}
+		} 
 	},
 });
 
-export const { addToCart, removeFromCart } = cartSlice.actions;
+export const { addToCart, removeFromCart, decreaseCartQuantity } = cartSlice.actions;
 
 export default cartSlice.reducer;
