@@ -40,11 +40,11 @@ function CartItem({ title, img, price, cartQuantity, item }) {
 					<span className="d-md-none pe-2">Quantity:</span>
 					<div className="d-flex border rounded-pill">
 						<div
-							className="p-1 px-3 border-end fw-bold"
+							className="p-1 px-3 border-end fw-bold pointer-event"
 							onClick={() => handleDecreaseCart(item)}>
 							-
 						</div>
-						<div className="p-1 px-3 border-end fw-bold">{cartQuantity}</div>
+						<div className="p-1 px-3 border-end fw-bold pointer-event">{cartQuantity}</div>
 						<div
 							className="p-1 px-3 fw-bold"
 							onClick={() => handleIncreaseCart(item)}>
